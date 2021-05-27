@@ -1,0 +1,98 @@
+: [11.05.2021 12:53:12.828] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: Unrecognised document element: Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.Token`1[Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.TokenType]
+
+styleMap: b => em
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 53
+: [11.05.2021 12:53:22.950] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: Unrecognised document element: Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.Token`1[Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.TokenType]
+
+styleMap: b => em
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 53
+: [11.05.2021 12:53:35.107] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: Unrecognised document element: Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.Token`1[Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.TokenType]
+
+styleMap: b => em
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 53
+: [11.05.2021 12:55:03.486] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: Unrecognised document element: Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.Token`1[Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.TokenType]
+
+styleMap: b => em
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 55
+: [11.05.2021 12:56:22.232] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: Unrecognised document element: Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.Token`1[Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.TokenType]
+
+styleMap: [b => em]
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 55
+: [11.05.2021 12:57:22.535] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: expected token of type _IDENTIFIER but was of type _UNKNOWN
+
+{styleMap: [b => em]}
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 55
+: [11.05.2021 13:12:42.361] [Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings()] error reading style map at line 1, character 1: Unrecognised document element: Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.Token`1[Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.TokenType]
+
+strong => em
+^   
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parseStyleMappings(List`1 lines)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.styles.parsing.StyleMapParser.parse(String input)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.conversion.DocumentToHtmlOptions.addStyleMap(String styleMap)  
+      в Mammoth.DocumentConverter.AddStyleMap(String styleMap)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 60
+: [11.05.2021 15:15:56.110] [System.IO.__Error.WinIOError()] Процесс не может получить доступ к файлу "C:\Temp\ConvDocToHTML\РКТС317a.docx", так как этот файл используется другим процессом.   
+      в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)  
+      в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)  
+      в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)  
+      в System.IO.Compression.ZipFile.Open(String archiveFileName, ZipArchiveMode mode, Encoding entryNameEncoding)  
+      в System.IO.Compression.ZipFile.OpenRead(String archiveFileName)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.archives.ZippedArchive..ctor(File file)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.InternalDocumentConverter.withDocxFile[T](File file, Function`2 function)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.InternalDocumentConverter__Anonymous_3.get()  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.util.PassThroughException.unwrap[T](SupplierWithException`2 supplier)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.InternalDocumentConverter.convertToHtml(File file)  
+      в Mammoth.DocumentConverter.ConvertToHtml(String path)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 66
+: [11.05.2021 15:39:37.312] [System.IO.__Error.WinIOError()] Процесс не может получить доступ к файлу "C:\Temp\ConvDocToHTML\РКТС318.docx", так как этот файл используется другим процессом.   
+      в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)  
+      в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)  
+      в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)  
+      в System.IO.Compression.ZipFile.Open(String archiveFileName, ZipArchiveMode mode, Encoding entryNameEncoding)  
+      в System.IO.Compression.ZipFile.OpenRead(String archiveFileName)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.archives.ZippedArchive..ctor(File file)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.InternalDocumentConverter.withDocxFile[T](File file, Function`2 function)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.InternalDocumentConverter__Anonymous_3.get()  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.util.PassThroughException.unwrap[T](SupplierWithException`2 supplier)  
+      в Mammoth.Couscous.org.zwobble.mammoth.internal.InternalDocumentConverter.convertToHtml(File file)  
+      в Mammoth.DocumentConverter.ConvertToHtml(String path)  
+      в DocToHTML.Model.DocHtml.ConvertDocToHtml(String fileName)
+      в C:\Users\alexc\source\repos\DocToHTML\DocToHTML\Model\DocHtml.cs:строка 66

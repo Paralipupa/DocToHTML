@@ -1,0 +1,9 @@
+b => em
+p => em
+i => strong
+p[style-name='Заголовок 3'] => h1:fresh
+p[style-name='Subsection'] => h2:fresh
+p[style-name^='О'] => h1
+p[style-name^='Normal'] => h1
+p.a3 => h1
+p.a9 => h2

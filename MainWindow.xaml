@@ -1,0 +1,79 @@
+﻿<Window x:Class="DocToHTML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocToHTML"
+        xmlns:p="clr-namespace:DocToHTML.Properties"
+        Closed="Window_Closed"
+        Height="{Binding Source={x:Static p:Settings.Default}, Path=hWin, Mode=TwoWay}"
+        Width="{Binding Source={x:Static p:Settings.Default}, Path=wWin, Mode=TwoWay}"
+        Icon="/DocToHTML;component/Resources/wtoh.png"
+        Title="{Binding Path=Title}">
+
+    <Window.Resources>
+        <DataTemplate x:Key="BuzyText">
+            <TextBlock  Text="{Binding BuzyText}"  Foreground="Red"/>
+        </DataTemplate>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="24"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Margin="0,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="файл MS Word" Margin="5,0,0,0"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="файл HTML" Margin="5,0,0,0"/>
+
+            <TextBox  Grid.Row="0" Grid.Column="1" Text="{Binding Path=FileDoc}" Margin="5,0,0,0"/>
+            <TextBox  Grid.Row="1" Grid.Column="1" Text="{Binding Path=FileHtml}" Margin="5,5,0,0" />
+
+            <Button  Grid.Row="0" Grid.Column="2" Content="Выбрать" Command="{Binding Path=SelectFileDocCommand}" Margin="5,0,5,5" ToolTip="Выбрать исходящий файл MS Word"/>
+            <Button  Grid.Row="1" Grid.Column="2" Content="Выбрать" Command="{Binding Path=SelectFileHtmlCommand}" Margin="5,5,5,0" ToolTip="Выбрать файл html, в который будет проводится конвертация"/>
+
+            <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="5">
+                <CheckBox Content="Выделить таблицы" IsChecked="{Binding Path=DocHtml.IsBorderTable, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"
+                          ToolTip="Обозначить границы таблиц параметром border"/>
+                <CheckBox  Content="Убрать все ссылки, кроме #Pril" IsChecked="{Binding Path=DocHtml.IsClearNodeA, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"
+                           ToolTip="Убирать все ссылки из документа, кроме начинающихся на 'Pril'"/>
+
+            </DockPanel>
+        </Grid>
+
+        <ListBox Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Path=Warnings}" SelectedItem="{Binding SelectedWarning}"/>
+
+
+        <Grid Grid.Row="2" >
+            <ContentControl ContentTemplate="{StaticResource BuzyAnimation}" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                            Visibility="{Binding Path=IsWait, Converter={StaticResource BoolToVis}, FallbackValue=Hidden}">
+                <ContentPresenter />
+            </ContentControl>
+        </Grid>
+
+        <DockPanel Grid.Row="3">
+            <TextBlock Text="{Binding BuzyText}" Margin="5,0,5,0" HorizontalAlignment="Center"/>
+        </DockPanel>
+
+        <DockPanel  Grid.Column="0" Grid.Row="1" Margin="15">
+            <Button Content="Выполнить" Command="{Binding Path=ConvertDocToHtmlCommand}" ToolTip="Выполнить конвертацию файла MS Word в HTML"/>
+        </DockPanel>
+    </Grid>
+</Window>
